@@ -1,0 +1,170 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    display: block;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+p {
+    font-family: 'Neuton', serif;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin: 1% 0;
+    margin-left: 1%;
+}
+
+h3 {
+    color: black;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+nav,
+footer {
+    background-color: #9c9797;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Mission Statement */
+
+#mission-statement {
+    background-image: url("./assets/company\ header\ image.jpg");
+    display: flex;
+    background-size: cover;
+    height: 300px;
+    align-items: flex-end;
+}
+
+.mission {
+    text-transform: uppercase;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    #mission-statement {
+        height: 200px;
+    }
+
+    .mission {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media Types */
+
+#media .content {
+    margin-left: 0;
+}
+
+#media {
+    background-color: #4287f5;
+}
+
+#media h2 {
+    padding-top: 2%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#media p {
+    margin-top: 0.5%;
+}
+
+#media-intro {
+    margin-left: 1%;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    align-content: center;
+    background-color: #4287f5;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+.project img {
+    width: 100px;
+    height: auto;
+}
+
+.type {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+    .type {
+        font-size: 2rem;
+    }
+    .examples {
+        font-size: 1.3rem;
+    }
+    .project img {
+        width: 70px;
+    }
+
+}
+
+/* Our Team */
+
+.employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.employee {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    border-right: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    border-radius: 10px;
+    margin: 2% 0;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.employee img {
+    max-width: 230px;
+    height: auto;
+}
+
+#team .content {
+    margin-left: 0;
+}
